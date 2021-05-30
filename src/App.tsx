@@ -1,10 +1,17 @@
+import { UserCard } from "./components/UserCard";
 import "./styles.css";
+
+const user = {
+  id: 1,
+  name: "Armin",
+  email: "thisis@aaaaaaa.aaaa",
+  address: "hometowm, japan"
+};
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <UserCard user={user} />
     </div>
   );
 }
